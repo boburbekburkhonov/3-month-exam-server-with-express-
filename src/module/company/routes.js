@@ -7,6 +7,12 @@ import company from "./company.js";
 const companyRoutes = Router()
 
 export default companyRoutes
-  .get('/', verifyToken, company.GET)
-  .post('/create', verifyToken, validationMiddleware(validationCompany), company.POST)
-  .delete('/delete/:id', verifyToken, company.DELETE)
+  .get("/", company.GET)
+  .get("/:id", company.GET_ID)
+  .post(
+    "/create",
+    verifyToken,
+    validationMiddleware(validationCompany),
+    company.POST
+  )
+  .delete("/delete/:id", verifyToken, company.DELETE);

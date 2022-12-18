@@ -2,6 +2,24 @@ import { ErrorHandler } from "../../error/error.handler.js";
 import model from "./model.js";
 
 class RoomsControllers {
+  async GET_ID(req, res, next) {
+    const { id } = req.params;
+
+    const foundRooms = await model.getRoomsId(id)
+    .catch(err => next(new ErrorHandler(err.message, 503)))
+
+    if(foundRooms) res.json(foundRooms)
+  }
+
+  async GET_COMPLEX_ID(req, res, next) {
+    const { id } = req.params;
+
+    const foundRooms = await model.getRoomsComplexId(id)
+    .catch(err => next(new ErrorHandler(err.message, 503)))
+
+    if(foundRooms) res.json(foundRooms)
+  }
+
   async GET(req, res, next) {
     const allRooms = await model.getRooms()
     .catch(err => next(new ErrorHandler(err.message, 503)))
@@ -28,7 +46,11 @@ class RoomsControllers {
     const deletedRooms = await model.deleteRooms(id)
     .catch(err => next(new ErrorHandler(err.message, 503)))
 
-    if(deletedRooms) res.sendStatus(204)
+    if (deletedRooms)
+      res.status(200).json({
+        message: "Rooms deleted successfully",
+        status: 204,
+      });
   }
 }
 

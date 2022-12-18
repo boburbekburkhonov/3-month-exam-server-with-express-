@@ -7,6 +7,12 @@ import banks from "./banks.js";
 const banksRoutes = Router()
 
 export default banksRoutes
-  .get('/', verifyToken, banks.GET)
-  .post('/create', verifyToken, validationMiddleware(validationBanks), banks.POST)
-  .delete('/delete/:id', verifyToken, banks.DELETE)
+  .get("/", banks.GET)
+  .get("/:id", banks.GET_ID)
+  .post(
+    "/create",
+    verifyToken,
+    validationMiddleware(validationBanks),
+    banks.POST
+  )
+  .delete("/delete/:id", verifyToken, banks.DELETE);

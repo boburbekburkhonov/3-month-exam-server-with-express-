@@ -7,6 +7,13 @@ import complex from "./complex.js";
 const complexRoutes = Router()
 
 export default complexRoutes
-  .get('/', verifyToken, complex.GET)
-  .post('/create', verifyToken, validationMiddleware(validationComplex), complex.POST)
-  .delete('/delete/:id', verifyToken, complex.DELETE)
+  .get("/", complex.GET)
+  .get("/:id", complex.GET_ID)
+  .get("/company/:id", complex.GET_COMPANY_ID)
+  .post(
+    "/create",
+    verifyToken,
+    validationMiddleware(validationComplex),
+    complex.POST
+  )
+  .delete("/delete/:id", verifyToken, complex.DELETE);

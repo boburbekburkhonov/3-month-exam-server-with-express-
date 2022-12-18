@@ -48,33 +48,33 @@ INSERT INTO company(company_name, company_img_url) VALUES
 
 -- ! INSERT COMPLEX
 INSERT INTO complex(complex_name, complex_company_id) VALUES
-('Toshkent City Shayhontohir', 'b0750d31-4731-4270-b1d8-b7e97f89c707'),
-('Olmazor City Olmazor', '03fe880b-93ce-4089-8f43-5160dc82c9d9'),
-('Olmazor City Sergeli', '03fe880b-93ce-4089-8f43-5160dc82c9d9'),
-('Akay City Yunusobod', '698b46e8-dee9-4a8e-a130-23a59bbd7ab1'),
-('Akay City Chilonzor', '698b46e8-dee9-4a8e-a130-23a59bbd7ab1'),
-('Akay City Qora qamish', '698b46e8-dee9-4a8e-a130-23a59bbd7ab1');
+('Toshkent City Shayhontohir', 'bdf9cdef-2fd2-4b90-8829-9214acc275f6'),
+('Olmazor City Olmazor', '8b4668b5-ee49-4ce9-b708-0965e8871f04'),
+('Olmazor City Sergeli', '8b4668b5-ee49-4ce9-b708-0965e8871f04'),
+('Akay City Yunusobod', 'e407b266-b5d2-4f14-a29f-9dda26deb49a'),
+('Akay City Chilonzor', 'e407b266-b5d2-4f14-a29f-9dda26deb49a'),
+('Akay City Qora qamish', 'e407b266-b5d2-4f14-a29f-9dda26deb49a');
 
 -- ! INSERT ROOMS
 INSERT INTO rooms(room_count, room_size, room_price, room_complex_id) VALUES
-(2, 30, '4 000 000', 'a823e70f-3cce-42af-b60d-7e5d8969807a'),
-(4, 70, '8 000 000', 'a823e70f-3cce-42af-b60d-7e5d8969807a'),
-(5, 80, '9 000 000', 'a823e70f-3cce-42af-b60d-7e5d8969807a'),
-(3, 40, '5 000 000', 'bc041350-ce91-466a-a1fc-d72587038a08'),
-(4, 70, '8 000 000', 'bc041350-ce91-466a-a1fc-d72587038a08'),
-(5, 80, '9 000 000', 'bc041350-ce91-466a-a1fc-d72587038a08'),
-(3, 40, '4 500 000', 'a2ffad82-74e8-4d6e-956c-9d3eb5c5026b'),
-(4, 70, '7 200 000', 'a2ffad82-74e8-4d6e-956c-9d3eb5c5026b'),
-(5, 80, '8 800 000', 'a2ffad82-74e8-4d6e-956c-9d3eb5c5026b'),
-(3, 40, '6 500 000', '13bcab83-1389-4390-bc75-04dfd149f3bd'),
-(4, 70, '8 200 000', '13bcab83-1389-4390-bc75-04dfd149f3bd'),
-(5, 80, '9 800 000', '13bcab83-1389-4390-bc75-04dfd149f3bd'),
-(3, 40, '6 000 000', 'f8851c3a-e456-4d87-b7a3-08c2b4e78439'),
-(4, 70, '8 000 000', 'f8851c3a-e456-4d87-b7a3-08c2b4e78439'),
-(5, 80, '9 000 000', 'f8851c3a-e456-4d87-b7a3-08c2b4e78439'),
-(3, 40, '4 000 000', 'c09e43ba-6f88-41dd-9f39-f1867ad56c27'),
-(4, 70, '6 000 000', 'c09e43ba-6f88-41dd-9f39-f1867ad56c27'),
-(5, 80, '7 000 000', 'c09e43ba-6f88-41dd-9f39-f1867ad56c27');
+(2, 30, '4 000 000', '03f913a1-3325-4d10-87d4-7586d6dbebbc'),
+(4, 70, '8 000 000', '03f913a1-3325-4d10-87d4-7586d6dbebbc'),
+(5, 80, '9 000 000', '03f913a1-3325-4d10-87d4-7586d6dbebbc'),
+(3, 40, '5 000 000', 'ceff1dbe-2129-4575-8ecb-c67319650e22'),
+(4, 70, '8 000 000', 'ceff1dbe-2129-4575-8ecb-c67319650e22'),
+(5, 80, '9 000 000', 'ceff1dbe-2129-4575-8ecb-c67319650e22'),
+(3, 40, '4 500 000', '652ab4b1-546f-43fd-804c-c7e749467a12'),
+(4, 70, '7 200 000', '652ab4b1-546f-43fd-804c-c7e749467a12'),
+(5, 80, '8 800 000', '652ab4b1-546f-43fd-804c-c7e749467a12'),
+(3, 40, '6 500 000', 'c9c3cb96-d6ab-46a2-a232-014ede08a19e'),
+(4, 70, '8 200 000', 'c9c3cb96-d6ab-46a2-a232-014ede08a19e'),
+(5, 80, '9 800 000', 'c9c3cb96-d6ab-46a2-a232-014ede08a19e'),
+(3, 40, '6 000 000', '2d97912c-c55c-47e3-ba7e-20b55ce9c4d7'),
+(4, 70, '8 000 000', '2d97912c-c55c-47e3-ba7e-20b55ce9c4d7'),
+(5, 80, '9 000 000', '2d97912c-c55c-47e3-ba7e-20b55ce9c4d7'),
+(3, 40, '4 000 000', '6d8a09c5-d167-4f3f-8531-d6719c488dc7'),
+(4, 70, '6 000 000', '6d8a09c5-d167-4f3f-8531-d6719c488dc7'),
+(5, 80, '7 000 000', '6d8a09c5-d167-4f3f-8531-d6719c488dc7');
 
 -- ! INSERT BANKS
 INSERT INTO banks(bank_name, bank_give_money, bank_money_term, bank_percentage) VALUES
@@ -168,6 +168,7 @@ $$
 	end
 $$;
 
+-- ROOMS WITH COMPLEX
 select
 	c.complex_name,
 	r.room_count,
@@ -179,3 +180,14 @@ join
 	rooms r
 on
 	c.complex_id = r.room_complex_id;
+
+
+-- COMPANY WITH COMPLEX
+select
+	*
+from
+	company c
+join
+	complex cp
+on
+	c.company_id = cp.complex_company_id;

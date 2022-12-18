@@ -7,6 +7,13 @@ import rooms from "./rooms.js";
 const roomsRoutes = Router()
 
 export default roomsRoutes
-  .get('/', verifyToken, rooms.GET)
-  .post('/create', verifyToken, validationMiddleware(validationRooms), rooms.POST)
-  .delete('/delete/:id', verifyToken, rooms.DELETE)
+  .get("/", rooms.GET)
+  .get("/:id", rooms.GET_ID)
+  .get("/complex/:id", rooms.GET_COMPLEX_ID)
+  .post(
+    "/create",
+    verifyToken,
+    validationMiddleware(validationRooms),
+    rooms.POST
+  )
+  .delete("/delete/:id", verifyToken, rooms.DELETE);
