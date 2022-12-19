@@ -5,10 +5,11 @@ class RoomsControllers {
   async GET_ID(req, res, next) {
     const { id } = req.params;
 
-    const foundRooms = await model.getRoomsId(id)
-    .catch(err => next(new ErrorHandler(err.message, 503)))
+    const [row] = await model
+      .getRoomsId(id)
+      .catch((err) => next(new ErrorHandler(err.message, 503)));
 
-    if(foundRooms) res.json(foundRooms)
+    if (row) res.json(row);
   }
 
   async GET_COMPLEX_ID(req, res, next) {

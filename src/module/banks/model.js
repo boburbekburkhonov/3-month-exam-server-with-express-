@@ -4,7 +4,7 @@ class Banks extends PG {
   getBanksId(id) {
     return this.fetchData(
       `
-      select * from banks where bank_id = $1;
+      select * from banks where bank_money_term = $1 order by bank_give_money;
     `,
       id
     );
